@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBIX", "NetBIX.csproj", "{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oBIX.DataModel", "oBIX.DataModel\oBIX.DataModel.csproj", "{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Debug|x86.ActiveCfg = Debug|x86
+		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Debug|x86.Build.0 = Debug|x86
+		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Release|x86.ActiveCfg = Release|x86
+		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Release|x86.Build.0 = Release|x86
+		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Debug|x86.ActiveCfg = Debug|x86
+		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Debug|x86.Build.0 = Debug|x86
+		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Release|x86.ActiveCfg = Release|x86
+		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = NetBIX.csproj
+	EndGlobalSection
+EndGlobal
