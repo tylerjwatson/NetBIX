@@ -26,6 +26,8 @@ All public oBIX APIs that rely on I/O to an oBIX server will return an `ObixResu
 
 **Connecting to an oBIX Server**
 
+Before all operations on a new `ObixClient`, you must `Connect()` to the oBIX server.  Doing this will enable NetBIX to discover all the services available on the oBIX server such as oBIX:Batch, oBIX:Watch, etc.
+
 ```cs
 ObixResult connectResult;
 XmlObixClient obixClient = new XmlObixClient(new Uri("http://obix.server/obix"));
