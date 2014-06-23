@@ -39,6 +39,33 @@ if (connectResult == ObixResult.kObixClientSuccess) {
 
 ```
 
+**Reading an oBIX object**
+
+The below example code illustrates how to connect to an oBIX server and read the oBIX lobby into an `XElement`, and handle errors in a graceful manner.
+
+```cs
+
+ObixResult connectResult;
+ObixResult<XElement> readResult;
+XmlObixClient obixClient = new XmlObixClient(new Uri("http://obix.server/obix"));
+
+connectResult = obixClient.Connect();
+if (connectResult == ObixResult.kObixClientSuccess) {
+  Console.WriteLine("Connection to the oBIX server succeeded!");
+} else {
+  Console.WriteLine("Connection to the oBIX server failed: {0}", ObixResult.Message(connectResult));
+}
+
+readResult = client.ReadUriXml(client.LobbyUri);
+if (readResult.ResultSucceeded == true) {
+  Console.WriteLine(readResult.Result.ToString());
+} else if (readResult.Result.IsObixErrorContract() == true) {
+  Console.WriteLine("The oBIX server returned an error contract: {0}", readResult.Result.ObixDisplay());
+} else { 
+  Console.WriteLine("Error reading from oBIX server: {0}", ObixResult.Message(readResult));
+}
+```
+
 
 ## Limitations
 
