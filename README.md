@@ -17,8 +17,8 @@ NetBIX is heavily integrated into, and depends on, LINQ-to-XML (XElement) types.
 ## Namespaces
 
 * **NetBIX.oBIX.Client** - Root Namespace, contains the classes required to open and manipulate an oBIX connection
-** **NetBIX.oBIX.Client.Framework** - Contains classses responsible for the running of the oBIX engine
-** **NetBIX.oBIX.Client.Extensions** - Contains the oBIX data-type conversion extensions
+  * **NetBIX.oBIX.Client.Framework** - Contains classses responsible for the running of the oBIX engine
+  * **NetBIX.oBIX.Client.Extensions** - Contains the oBIX data-type conversion extensions
 
 ## Getting started
 
