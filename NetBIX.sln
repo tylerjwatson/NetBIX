@@ -1,26 +1,109 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBIX", "NetBIX.csproj", "{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2967E2E2-AEF4-4C3C-9257-C69743D19822}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oBIX.DataModel", "oBIX.DataModel\oBIX.DataModel.csproj", "{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBIX.NUnitTests", "NetBIX.ContractTest\NetBIX.Tests\NetBIX.NUnitTests.csproj", "{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBIX.WindowsUnitTest", "NetBIX.WindowsUnitTest\NetBIX.WindowsUnitTest.csproj", "{F0294475-95DA-4F22-BE83-208FF0CF28A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBIX.oBIX.Client.Tests", "NetBIX.oBIX.Client.Tests\NetBIX.oBIX.Client.Tests.csproj", "{F9080057-BC29-4B38-80E1-E9437886C53E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetBIX.oBIX.PortableClient", "NetBIX.oBIX.PortableClient\NetBIX.oBIX.PortableClient.csproj", "{3BD3D946-6AD7-401E-90D5-4544535022CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Debug|x86.ActiveCfg = Debug|x86
-		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Debug|x86.Build.0 = Debug|x86
-		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Release|x86.ActiveCfg = Release|x86
-		{30A95C3C-799F-4AE4-ABA9-2FEE28DEBE6E}.Release|x86.Build.0 = Release|x86
-		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Debug|x86.ActiveCfg = Debug|x86
-		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Debug|x86.Build.0 = Debug|x86
-		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Release|x86.ActiveCfg = Release|x86
-		{5D8CC883-D22B-48CC-9E07-057C2C7E8C97}.Release|x86.Build.0 = Release|x86
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Debug|x86.Build.0 = Debug|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Release|x86.ActiveCfg = Release|Any CPU
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93}.Release|x86.Build.0 = Release|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Debug|x86.Build.0 = Debug|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Release|x86.ActiveCfg = Release|Any CPU
+		{F9080057-BC29-4B38-80E1-E9437886C53E}.Release|x86.Build.0 = Release|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3BD3D946-6AD7-401E-90D5-4544535022CF}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3C1D1DCD-DC6C-4C0C-B2C8-2568C3D14A93} = {2967E2E2-AEF4-4C3C-9257-C69743D19822}
+		{F0294475-95DA-4F22-BE83-208FF0CF28A3} = {2967E2E2-AEF4-4C3C-9257-C69743D19822}
+		{F9080057-BC29-4B38-80E1-E9437886C53E} = {2967E2E2-AEF4-4C3C-9257-C69743D19822}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = NetBIX.csproj
+		StartupItem = oBIX.DataModel\oBIX.DataModel.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.IndentSwitchBody = True
+		$2.NamespaceBraceStyle = EndOfLine
+		$2.ClassBraceStyle = EndOfLine
+		$2.InterfaceBraceStyle = EndOfLine
+		$2.StructBraceStyle = EndOfLine
+		$2.EnumBraceStyle = EndOfLine
+		$2.MethodBraceStyle = EndOfLine
+		$2.ConstructorBraceStyle = EndOfLine
+		$2.DestructorBraceStyle = EndOfLine
+		$2.ElseNewLinePlacement = NewLine
+		$2.CatchNewLinePlacement = NewLine
+		$2.FinallyNewLinePlacement = NewLine
+		$2.WhileNewLinePlacement = DoNotCare
+		$2.ArrayInitializerWrapping = DoNotChange
+		$2.ArrayInitializerBraceStyle = NextLine
+		$2.BeforeMethodDeclarationParentheses = False
+		$2.BeforeMethodCallParentheses = False
+		$2.BeforeConstructorDeclarationParentheses = False
+		$2.BeforeDelegateDeclarationParentheses = False
+		$2.NewParentheses = False
+		$2.SpacesBeforeBrackets = False
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
 	EndGlobalSection
 EndGlobal

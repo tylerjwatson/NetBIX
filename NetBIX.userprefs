@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NetBIX.ContractTest/NetBIX.Tests/Test.cs">
+    <Files>
+      <File FileName="NetBIX.ContractTest/NetBIX.Tests/Test.cs" Line="21" Column="24" />
+      <File FileName="NetBIX.oBIX.Client/XmlObixClient.cs" Line="103" Column="48" />
+      <File FileName="NetBIX.oBIX.Client/Framework/ObixClient.cs" Line="1" Column="1" />
+      <File FileName="NetBIX.oBIX.Client/Framework/ObixError.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/tw/Dropbox/Private/_dev/NetBIX/NetBIX.ContractTest/NetBIX.Tests/Test.cs" line="61" column="1" />
+      <Breakpoint file="/Users/tyler.watson/Dropbox/Private/_dev/NetBIX/NetBIX.oBIX.Client/XmlObixClient.cs" line="75" column="1" />
+      <Breakpoint file="/Users/tyler.watson/Dropbox/Private/_dev/NetBIX/NetBIX.oBIX.Client/XmlObixClient.cs" line="145" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

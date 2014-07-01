@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BD3D946-6AD7-401E-90D5-4544535022CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetBIX.oBIX.Client</RootNamespace>
+    <TargetFrameworkProfile>Profile7</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>NetBIX.oBIX.Client</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>NetBIX.oBIX.Client</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Android Device|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Android Device</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>NetBIX.oBIX.PortableClient</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\Boolean.ObixExtensions.cs" />
+    <Compile Include="Extensions\String.ObixExtensions.cs" />
+    <Compile Include="Extensions\Uri.Extensions.cs" />
+    <Compile Include="Extensions\XElement.ObixExtensions.cs" />
+    <Compile Include="Framework\ObixBatch.cs" />
+    <Compile Include="Framework\ObixClient.cs" />
+    <Compile Include="Framework\ObixError.cs" />
+    <Compile Include="Framework\ObixResult.cs" />
+    <Compile Include="ObixAbout.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlBatch.cs" />
+    <Compile Include="XmlBatchClient.cs" />
+    <Compile Include="XmlObixClient.cs" />
+    <Compile Include="Extensions\Decimal.ObixExtensions.cs" />
+    <Compile Include="Extensions\DateTime.ObixExtensions.cs" />
+    <Compile Include="Extensions\Integer.ObixExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Flurl">
+      <HintPath>..\packages\Flurl.0.2.1\lib\portable-win+net40+sl40+wp+Xbox40\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\..\..\..\Projects\mobile\ONEDC.Mobile\packages\Microsoft.Net.Http.2.2.20\lib\portable-net45+win8\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\..\..\..\Projects\mobile\ONEDC.Mobile\packages\Microsoft.Net.Http.2.2.20\lib\portable-net45+win8\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
