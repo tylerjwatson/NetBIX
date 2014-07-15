@@ -18,6 +18,22 @@ namespace NetBIX.oBIX.Client.Extensions {
             return element;
         }
 
+		public static XElement ObixXmlValue(this bool input, string name, string href)
+		{
+			XElement element = input.ObixXmlValue();
+
+			if (string.IsNullOrEmpty(name) == false) {
+				element.SetAttributeValue("name", name);
+			}
+
+			if (string.IsNullOrEmpty(href) == false) {
+				element.SetAttributeValue("href", href);
+			}
+
+			return element;
+		}
+
+
         /// <summary>
         /// Returns a nullable boolean from its oBIX bool element representation.
         /// </summary>
