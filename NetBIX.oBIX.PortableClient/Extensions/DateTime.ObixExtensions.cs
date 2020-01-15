@@ -2,7 +2,7 @@
 using System.Xml.Linq;
 using NetBIX.oBIX.Client.Extensions;
 
-namespace NetBIX.oBIX.Client {
+namespace NetBIX.oBIX.Client.Extensions {
 	public static class DateTimeObixExtensions {
 		public static XElement ObixXmlValue(this DateTime value) {
 			XElement element = new XElement("abstime");
