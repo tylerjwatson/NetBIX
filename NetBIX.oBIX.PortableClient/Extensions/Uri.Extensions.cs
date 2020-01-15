@@ -14,7 +14,7 @@ namespace NetBIX.oBIX.Client.Extensions {
             } else if (uriString.StartsWith("/")) {
                 return new Uri(uri, uriString);
              } else {
-                 return new Uri(Url.Combine(uri.ToString(), uriString.Split('/')));
+                 return new Uri(Url.Combine(uri.ToString(), uriString));
              }
         }
 
